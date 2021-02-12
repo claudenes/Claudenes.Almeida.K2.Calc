@@ -107,5 +107,18 @@ namespace Claudenes.Almeida.K2.Calc.Controllers
         {
             return _context.CalculaJuros.Any(e => e.Id == id);
         }
+        /// <summary>
+        /// Show me the code
+        /// </summary>
+        /// <returns></returns>
+        [HttpGet, Route("showmethecode")]
+        public async Task<IActionResult> ShowMeTheCode()
+        {
+            return Ok("https://github.com/claudenes/Claudenes.Almeida.K2.Calc");
+        } 
     }
+    
+
+    
+
 }
